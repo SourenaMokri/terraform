@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: [ "main" ]
 env:
-  PROJECT_PATH: './src/SimpleApi/SimpleApi/SimpleApi.csproj'
+  PROJECT_PATH: './src/SimpleApi/SimpleApi.slnj'
   
 jobs:
   build:
