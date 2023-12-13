@@ -23,6 +23,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore ./src/SimpleApi/SimpleApi/SimpleApi.csproj
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build ./src/SimpleApi/SimpleApi/SimpleApi.csproj --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test ./src/SimpleApi/SimpleApi/SimpleApi.csproj --no-build --verbosity normal
