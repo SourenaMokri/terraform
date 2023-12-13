@@ -21,7 +21,7 @@ jobs:
       with:
         dotnet-version: 7.0.x
     - name: Restore dependencies
-      run: dotnet restore ./src/SimpleApi/SimpleApi/SimpleApi.csproj
+      run: dotnet restore ./src/**/SimpleApi.csproj
     - name: Build
       run: dotnet build ./src/SimpleApi/SimpleApi/SimpleApi.csproj --no-restore
     - name: Test
